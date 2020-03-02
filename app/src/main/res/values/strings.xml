@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Troftey</string>
+    <string name="SlideOne">One</string>
+    <string name="SlideTwo">Two</string>
+    <string name="SlideThree">Three</string>
+    <string name="next_Text">Next</string>
+    <string name="back_Text">Back</string>
+    <string name="joinOthers">Join other creators who share their works to over 200 readers</string>
+    <string name="publishingYourBooks">Publishing of your book can take up to two (2) days</string>
+    <string name="dummyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="uploadWarning">Publishing of your book can take up to two days.</string>
+    <string name="uploadInfo">none</string>
+    <string name="joined2019">Joined\n 2019</string>
+    <string name="joined2020">Joined\n 2020</string>
+    <string name="booksWritten">Books Written\n 6</string>
+    <string name="bookOfTheMonthText">Often times, We are put through tests.Tests that determine our faith and values. Well this isn\'t too far from a certain young woman called Jane. Jane and her fiancee Dylan were hitting the road when a truck hit them, hard. Some might have said that the events that followed after were perhaps just a figment of her imagination, if she decided to share her story. Having her faith tested proved to be rather difficult task in a world where it felt like she would vanish a moment later.</string>
+    <string name="bookOfTheMonthTitle">Blast From The Past</string>
+    <string name="bookOfTheMonthWriter">Writer\'s Name</string>
+    <string name="writersOfTheWeek">Writers Of The Week</string>
+    <string name="latestBooks">Latest Books</string>
+    <string name="profile1">Liza Koshi</string>
+
+    <string name="wowUser1">Liza\n Koshi</string>
+    <string name="wowUser2">Nathan\n Johnson</string>
+    <string name="wowUser3">Donald\n Glover</string>
+    <string name="wowUser4">Rebecca\n Felgate</string>
+    <string name="wowUser5">Lilly\n Singh</string>
+    <string name="wowUser6">Adam\n Levine</string>
+    <string name="wowUser7">Lupita\n N</string>
+    <string name="wowUser8">NigaHiga\n</string>
+    <string name="wowUser9">Neymar Jr.\n</string>
+    <string name="wowUser10">Lionel\n Messi</string>
+    <string name="wowUser11">Bart\n Baker</string>
+    <string name="wowUser12">Sssniperwolf\n</string>
+
+
+    <string name="action">Action</string>
+    <string name="adventure">Adventure</string>
+    <string name="biography">Biography</string>
+    <string name="comedy">Comedy</string>
+    <string name="discovery">Discovery</string>
+    <string name="education">Education</string>
+    <string name="family">Family</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="fiction">Fiction</string>
+    <string name="fitnessHealth">Fitness &amp; Health</string>
+    <string name="kids">Kids</string>
+    <string name="LGBT">LGBT</string>
+    <string name="leadership">Leadership</string>
+    <string name="NonFiction">Non - Fiction</string>
+    <string name="poetry">Poetry</string>
+    <string name="religion">Religion</string>
+    <string name="sciFi">Sci-Fi</string>
+    <string name="sports">Sports</string>
+</resources>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+            <ImageView
+                android:id="@+id/actionCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/action_button"
+                app:layout_constraintEnd_toStartOf="@+id/adventureCategoryButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/actionCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/action"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/actionCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/actionCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/actionCategoryButton" />
+
+            <ImageView
+                android:id="@+id/adventureCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/adventure_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/actionCategoryButton" />
+
+            <TextView
+                android:id="@+id/adventureCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/adventure"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/adventureCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/adventureCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/actionCategoryButton" />
+
+            <ImageView
+                android:id="@+id/biographyCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:src="@drawable/biography_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/adventureCategoryButton"
+                app:layout_constraintTop_toTopOf="@+id/adventureCategoryButton" />
+
+            <TextView
+                android:id="@+id/biographyCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/biography"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/biographyCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/biographyCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/biographyCategoryButton" />
+
+            <ImageView
+                android:id="@+id/comedyCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/comedy_button"
+                app:layout_constraintEnd_toStartOf="@+id/discoveryCategoryButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/actionCategoryText" />
+
+            <TextView
+                android:id="@+id/comedyCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/comedy"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/comedyCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/comedyCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/comedyCategoryButton" />
+
+            <ImageView
+                android:id="@+id/discoveryCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/discovery_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adventureCategoryText" />
+
+            <TextView
+                android:id="@+id/discoveryCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/discovery"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/discoveryCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/discoveryCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/discoveryCategoryButton" />
+
+            <ImageView
+                android:id="@+id/educationCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:src="@drawable/education_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/discoveryCategoryButton"
+                app:layout_constraintTop_toTopOf="@+id/discoveryCategoryButton" />
+
+            <TextView
+                android:id="@+id/educationCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/education"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/educationCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/educationCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/educationCategoryButton" />
+
+            <ImageView
+                android:id="@+id/familyCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/family_button"
+                app:layout_constraintEnd_toStartOf="@+id/fantasyCategoryButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comedyCategoryText" />
+
+            <TextView
+                android:id="@+id/familyCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/family"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/familyCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/familyCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/familyCategoryButton" />
+
+            <ImageView
+                android:id="@+id/fantasyCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/fantasy_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/discoveryCategoryText" />
+
+            <TextView
+                android:id="@+id/fantasyCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/fantasy"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/fantasyCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/fantasyCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/fantasyCategoryButton" />
+
+            <ImageView
+                android:id="@+id/fictionCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/fiction_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fantasyCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/educationCategoryText" />
+
+            <TextView
+                android:id="@+id/fictionCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/fiction"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/fictionCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/fictionCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/fantasyCategoryButton" />
+
+            <ImageView
+                android:id="@+id/fitnessHealthCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/fitness_health_button"
+                app:layout_constraintEnd_toStartOf="@+id/kidsCategoryButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/familyCategoryText" />
+
+            <TextView
+                android:id="@+id/fitnessHealthCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/fitnessHealth"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/fitnessHealthCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/fitnessHealthCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/fitnessHealthCategoryButton" />
+
+            <ImageView
+                android:id="@+id/kidsCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/kids_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fantasyCategoryText" />
+
+            <TextView
+                android:id="@+id/kidsCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/kids"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/kidsCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/kidsCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/fitnessHealthCategoryButton" />
+
+            <ImageView
+                android:id="@+id/LGBTCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/lgbt_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kidsCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/fantasyCategoryText" />
+
+            <TextView
+                android:id="@+id/LGBTCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/LGBT"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/LGBTCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/LGBTCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/fitnessHealthCategoryButton" />
+
+            <ImageView
+                android:id="@+id/nonFictionCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/non_fiction_button"
+                app:layout_constraintEnd_toStartOf="@+id/poetryCategoryButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitnessHealthCategoryText" />
+
+            <TextView
+                android:id="@+id/nonFictionCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/NonFiction"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/nonFictionCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/nonFictionCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/nonFictionCategoryButton" />
+
+            <ImageView
+                android:id="@+id/poetryCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/poetry_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kidsCategoryText" />
+
+            <TextView
+                android:id="@+id/PoetryCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/poetry"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/poetryCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/poetryCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/poetryCategoryButton" />
+
+            <ImageView
+                android:id="@+id/religionCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/religion_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/poetryCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/LGBTCategoryText" />
+
+            <TextView
+                android:id="@+id/religionCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/religion"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/religionCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/religionCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/religionCategoryButton" />
+
+            <ImageView
+                android:id="@+id/sciFiCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/scifi_button"
+                app:layout_constraintEnd_toStartOf="@+id/sportsCategoryButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nonFictionCategoryText" />
+
+            <TextView
+                android:id="@+id/sciFiCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/sciFi"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/sciFiCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/sciFiCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/sciFiCategoryButton" />
+
+            <ImageView
+                android:id="@+id/sportsCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/sports_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PoetryCategoryText" />
+
+            <TextView
+                android:id="@+id/sportsCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/sports"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/sportsCategoryButton"
+                app:layout_constraintStart_toStartOf="@+id/sportsCategoryButton"
+                app:layout_constraintTop_toBottomOf="@+id/sciFiCategoryButton" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:src="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/sportsCategoryText" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

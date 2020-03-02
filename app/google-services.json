@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "464764929965",
+    "firebase_url": "https://troftey.firebaseio.com",
+    "project_id": "troftey",
+    "storage_bucket": "troftey.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464764929965:android:3133d4783692ce8ed40324",
+        "android_client_info": {
+          "package_name": "com.havorstudios.troftey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464764929965-e9qj32bcim7kc2qsucson5dh1tdtf1d5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.havorstudios.troftey",
+            "certificate_hash": "96436c3678336a2e4cffab2367f22c6a153ff3fd"
+          }
+        },
+        {
+          "client_id": "464764929965-u5n2l2kgdefk0nau59c1v7creg1g2sjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBWbwDSqnW52q0gSF-xrVTKaBVVixtl0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464764929965-u5n2l2kgdefk0nau59c1v7creg1g2sjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

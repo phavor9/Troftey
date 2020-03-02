@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+            <TextView
+                android:id="@+id/FeaturedBooksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Featured Books"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <HorizontalScrollView
+                android:id="@+id/featuredHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FeaturedBooksText">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/FeaturedImage1"
+                        android:layout_width="165dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/story2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/FeaturedImage2"
+                        android:layout_width="165dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/story3"
+                        app:layout_constraintStart_toEndOf="@+id/FeaturedImage1"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/FeaturedImage3"
+                        android:layout_width="165dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/story2"
+                        app:layout_constraintStart_toEndOf="@+id/FeaturedImage2"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Book Of The Month"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/featuredHorizontalScrollView"></TextView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="This Month's book recommended by us"
+                android:textColor="#000"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"></TextView>
+
+            <Button
+                android:id="@+id/bookOfTheDayReadMore"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#fff"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Read More"
+                android:textColor="#000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView3"></Button>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/botui"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/robin"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/separator"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <ImageView
+                android:id="@+id/botmbi"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sun"
+                app:layout_constraintStart_toEndOf="@+id/separator"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"></ImageView>
+
+            <ImageView
+                android:id="@+id/separator"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:src="@color/gray"
+                app:layout_constraintBottom_toBottomOf="@+id/botmbi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/botmbi" />
+
+            <TextView
+                android:id="@+id/bookOfTheMonthTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/bookOfTheMonthTitle"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/botmbi" />
+
+            <TextView
+                android:id="@+id/bookOfTheMonthWriter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/bookOfTheMonthWriter"
+                android:textColor="#3898B0"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bookOfTheMonthTitle" />
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Action"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bookOfTheMonthWriter"></TextView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="16dp">
+
+                    <ImageView
+                        android:id="@+id/genre1"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:onClick="moveToBook"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/genre2"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/the_girl_in_red"
+                        app:layout_constraintStart_toEndOf="@+id/genre1"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/genre3"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/genre2"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/genre4"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/genre3"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/genre5"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/genre4"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/genre6"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/genre5"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/genre7"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/genre6"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/genre8"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/genre7"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/genre9"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/genre8"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/adventureTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Adventure"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"></TextView>
+
+            <HorizontalScrollView
+                android:id="@+id/adventureHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adventureTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/adventuregenre1"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/adventuregenre2"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/adventuregenre1"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/adventuregenre3"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/adventuregenre2"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/adventuregenre4"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/adventuregenre3"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/adventuregenre5"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/adventuregenre4"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/adventuregenre6"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/adventuregenre5"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/adventuregenre7"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/adventuregenre6"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/adventuregenre8"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/adventuregenre7"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/adventuregenre9"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/adventuregenre8"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/sciFiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Sci-Fi"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adventureHorizontalScrollView"></TextView>
+
+            <HorizontalScrollView
+                android:id="@+id/sciFiHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sciFiTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="16dp">
+
+                    <ImageView
+                        android:id="@+id/sciFigenre1"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/sciFigenre2"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/sciFigenre1"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/sciFigenre3"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/sciFigenre2"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/sciFigenre4"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/sciFigenre3"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/sciFigenre5"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/sciFigenre4"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/sciFigenre6"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/sciFigenre5"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/sciFigenre7"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/sciFigenre6"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/sciFigenre8"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/sciFigenre7"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/sciFigenre9"
+                        android:layout_width="86dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blastfromthepast"
+                        app:layout_constraintStart_toEndOf="@+id/sciFigenre8"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="450dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sciFiHorizontalScrollView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
